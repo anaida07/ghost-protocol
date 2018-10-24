@@ -1,17 +1,23 @@
 import React from 'react';
-import { View } from 'react-desktop/windows';
 
 class Login extends React.Component {
+  constructor(props) {
+    super(props);
+    this.logUser = this.logUser.bind(this);
+  }
+
+  logUser(e) {
+    this.props.history.push('/settings');
+  }
+
   render() {
     return (
-      <View layout="vertical">
-        <div className="login">
-          <h2>Login</h2>
-          <input type="text" name="username" placeholder="username"></input><br />
-          <input type="password" name="password" placeholder="password"></input><br />
-          <button>Login</button>
-        </div>
-      </View>
+      <div className="login">
+        <h2>Login</h2>
+        <input type="text" name="username" placeholder="username"></input><br />
+        <input type="password" name="password" placeholder="password"></input><br />
+        <button onClick={this.logUser}>Login</button>
+      </div>
     );
   }
 }
