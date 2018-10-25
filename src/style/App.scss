@@ -18,12 +18,15 @@
   color: white;
 }
 
+/* Login Screen */
 .login {
   width: 100%;
+  text-align: center;
+  margin-top: 150px;
 }
 
 .login input, .login button{
-  border: none;
+  border: 1px solid #efebeb;
   padding: 10px;
   border-radius: 5px;
   font-size: 14px;
@@ -34,7 +37,7 @@
 
 .login button {
   text-align: center;
-  background: #08b;
+  background: #75a7da;
   color: #fff;
   text-transform: uppercase;
   width: 37%;
@@ -43,8 +46,41 @@
 }
 
 .login button:hover {
-  background: #0278a5;
+  background: #568fca;
 }
+/* Login Screen */
+
+/* Navigation Links */
+.wrapper {
+  display: flow-root;
+  margin-top: 45vh;
+  height: 100vh;
+  
+  .nav {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    
+    a {
+      padding: 15px;
+      text-decoration: none;
+      border: 1px solid #6ca2da;
+      margin: 10px;
+      border-radius: 5px;
+      color: #ffffff;
+      background: #75a7da;
+
+      &:hover {
+        background: #568fca;
+      }
+    }
+  }
+
+  .main {
+    margin: 30px 220px;
+  }
+}
+/* Navigation Links */
 
 .App-link {
   color: #61dafb;
@@ -57,4 +93,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main {
+
 }
