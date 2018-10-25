@@ -5,7 +5,7 @@ class Settings extends React.Component {
   render() {
     return (
       <View>
-        <h1>Settings</h1>
+        <h2>Settings</h2>
       </View>
     );
   }
