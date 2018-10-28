@@ -1,30 +1,24 @@
 import React from 'react';
-import { View } from 'react-desktop/windows';
-import styled from 'styled-components';
-
-
-const H1 = styled.h1`
-  position: absolute;
-  top: 25%;
-  left: 0px;
-  width: 100%;
-  text-align: center;
-  line-height: 28px;
-  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
-  font-size: 45px;
-  font-weight: 100;
-  color: #333;
-`;
-
+import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
   render() {
     return (
-      <View layout="vertical">
-        <H1>
-          Welcome to React Desktop
-        </H1>
-      </View>
+      <div className="wrapper">
+        <ul className="nav">
+          <Link to="#">Tasks</Link>
+          <Link to="#">Settings</Link>
+          <Link to="#">Edit Profile</Link>
+          <Link to="#">Notifications</Link>
+          <Link to="/">Logout</Link>
+        </ul>
+
+        <div className="main">
+          <div className="left tasks"></div>
+          <div className="right"></div>
+          <div className="clear"></div>
+        </div>
+      </div>
     );
   }
 }

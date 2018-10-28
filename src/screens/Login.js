@@ -1,4 +1,5 @@
 import React from 'react';
+import './../style/App.scss';
 
 class Login extends React.Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class Login extends React.Component {
   }
 
   logUser(e) {
-    this.props.history.push('/settings');
+    this.props.history.push('/home');
   }
 
   render() {
