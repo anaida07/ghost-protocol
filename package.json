@@ -8,6 +8,7 @@
     "electron": "^3.0.5",
     "electron-builder": "^20.28.4",
     "electron-is-dev": "^1.0.1",
+    "electron-navigation": "^1.5.8",
     "node-sass": "^4.9.4",
     "react": "^16.5.2",
     "react-desktop": "^0.3.7",
