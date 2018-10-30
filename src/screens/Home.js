@@ -2,11 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.renderTasks = this.renderTasks.bind(this);
+  }
+
+  renderTasks(e) {
+    window.location.reload();
+  }
+
   render() {
     return (
       <div className="wrapper">
         <ul className="nav">
-          <Link to="/tasks" title="Tasks"><i className="fas fa-tasks"></i></Link>
+          <Link to="/tasks" title="Tasks" id="tasks" onClick={this.renderTasks}><i className="fas fa-tasks"></i></Link>
           <Link to="#" title="Settings"><i className="fas fa-cog"></i></Link>
           <Link to="#" title="Edit Profile"><i className="fas fa-user"></i></Link>
           <Link to="#" title="Notifications"><i className="fas fa-bell"></i></Link>
