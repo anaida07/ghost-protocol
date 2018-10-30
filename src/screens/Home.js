@@ -8,6 +8,7 @@ class Home extends React.Component {
   }
 
   renderTasks() {
+    this.props.history.push('/tasks');
     window.location.reload();
   }
 
@@ -15,7 +16,7 @@ class Home extends React.Component {
     return (
       <div className="wrapper">
         <ul className="nav">
-          <Link to="/tasks" title="Tasks"><i className="fas fa-tasks" onClick={this.renderTasks}></i></Link>
+          <button onClick={this.renderTasks} title="Tasks"><i className="fas fa-tasks"></i></button>
           <Link to="#" title="Settings"><i className="fas fa-cog"></i></Link>
           <Link to="#" title="Edit Profile"><i className="fas fa-user"></i></Link>
           <Link to="#" title="Notifications"><i className="fas fa-bell"></i></Link>

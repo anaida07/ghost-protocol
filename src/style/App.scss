@@ -23,6 +23,10 @@
   width: 100%;
   text-align: center;
   margin-top: 150px;
+
+  .logo {
+    margin-bottom: 20px;
+  }
 }
 
 .login input, .login button{
@@ -61,7 +65,7 @@
     width: 100%;
     padding: 0;
     
-    a {
+    a, button {
       padding: 15px 30px;
       text-decoration: none;
       border: 1px solid #6ca2da;
@@ -69,9 +73,11 @@
       border-radius: 5px;
       color: #75a7da;
       font-size: 30px;
+      cursor: pointer;
 
       &:hover {
         background: #568fca;
+        color: #fff;
       }
     }
   }
