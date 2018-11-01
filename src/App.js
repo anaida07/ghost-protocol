@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route,  HashRouter as Router } from 'react-router-dom';
 import { withRouter } from 'react-router';
 
-import { Login, Settings, Home } from './screens';
+import { Login, Settings, Home, Tasks } from './screens';
 
 
 class App extends Component {
@@ -20,6 +20,7 @@ class App extends Component {
           <Route exact path="/" component={Login} />
           <Route path="/settings" component={Settings} />
           <Route path="/home" component={Home} />
+          <Route path="/tasks" component={Tasks} />
         </div>
       </Router>
     );

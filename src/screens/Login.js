@@ -14,9 +14,9 @@ class Login extends React.Component {
   render() {
     return (
       <div className="login">
-        <h2>Login</h2>
-        <input type="text" name="username" placeholder="username"></input><br />
-        <input type="password" name="password" placeholder="password"></input><br />
+        <img src="cf-separated-logo.png" alt="CloudFactory" width="300" className="logo"></img><br />
+        <input type="text" name="username" placeholder="Username"></input><br />
+        <input type="password" name="password" placeholder="Password"></input><br />
         <button onClick={this.logUser}>Login</button>
       </div>
     );
